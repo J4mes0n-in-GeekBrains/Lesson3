@@ -15,7 +15,7 @@ public class Lesson3 {
         System.out.println("Задание 4");
         fillDiagonal();
         System.out.println("Задание 5");
-        flashback();
+        flashback(4,6);
 
     }
 
@@ -71,16 +71,14 @@ public class Lesson3 {
             System.out.println();
         }
     }
-
-    public static void flashback() {
-        int len;
-        int initialValue;
-        len = 25;
-        initialValue = 3;
+    public static int[] flashback(int len, int initialValue) {
         int[] arr = new int[len];
-        for (int i = 0; i < len; i++)
-        arr[i] = initialValue;
-       System.out.println(Arrays.toString(arr));
+        for (int i = 0; i < len; i++) {
+            arr[i] = initialValue;
+            System.out.println(Arrays.toString(arr));
+        }
+        return arr;
+
         }
 
     }
